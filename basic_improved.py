@@ -1,4 +1,4 @@
-#
+#this is for modern updated code 
 
 import qiskit
 from qiskit_aer import Aer
@@ -8,6 +8,8 @@ circuit = qiskit.QuantumCircuit(2,2)
 
 # Apply a Hadamard gate to the first qubit
 circuit.h(0)
+
+#you dont need to manually add classical register already added in (2,2)
 
 # Measure qubits into classical bits
 circuit.measure([0,1], [0,1])
